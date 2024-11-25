@@ -1,0 +1,90 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d4a8f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Navigation Bar Styling */
+.navlinks {
+    background-color: #6f6569;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky; /* Keeps the navbar visible while scrolling */
+    top: 0;
+    z-index: 1000;
+}
+
+.navlinks ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navlinks ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.navlinks ul li a:hover {
+    background-color: #8d5880;
+    color: #f0f0ff;
+    transform: translateY(-2px);
+}
+
+/* Page Title Styling */
+h1 {
+    font-size: 36px;
+    color: #6c5b7b;
+    text-align: center;
+    margin: 30px 0;
+    text-transform: uppercase;
+}
+
+/* Ordered List Styling */
+ol {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 25px 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+ol li {
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+ol li strong {
+    font-size: 15px;
+    color: #6c5b7b;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .navlinks ul {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    ol {
+        padding: 15px;
+    }
+
+    ol li {
+        font-size: 16px;
+    }
+}
