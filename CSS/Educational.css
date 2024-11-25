@@ -1,0 +1,115 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #d4a1ff;
+    color: #333;
+    line-height: 1.6; /* Improved readability */
+}
+
+/* Navigation Bar */
+.navlinks {
+    background-color: #6f6569; /* Softer primary purple */
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle depth */
+}
+
+.navlinks ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center navigation items */
+    gap: 20px; /* Space between items */
+}
+
+.navlinks ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 8px 14px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.navlinks ul li a:hover {
+    background-color: #8d5880; /* Sli8d5880ghtly darker hover effect */
+    color: #f0f0ff; /* Softer contrast */
+    transform: translateY(-3px); /* Elegant hover animation */
+}
+
+/* Container Box */
+.cont-box {
+    padding: 30px;
+    max-width: 800px;
+    margin: 60px auto; /* Centered with space */
+    background: #fff; /* Clean white box */
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border: none; /* Removed border for simplicity */
+}
+
+/* Section Title */
+.obj h1 {
+    font-size: 2.2rem;
+    text-align: center;
+    color: #4B0082;
+    margin-bottom: 25px;
+    text-transform: capitalize; /* More modern style */
+    letter-spacing: 1.2px;
+}
+
+/* Content Section */
+.content ul {
+    padding: 0;
+    list-style: none;
+}
+
+.content ul li {
+    margin: 10px 0;
+    padding-left: 30px;
+    font-size: 1rem;
+    position: relative;
+    line-height: 1.8;
+    color: #444;
+}
+
+.content ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: #9370DB;
+    border-radius: 50%; /* Circle bullets */
+}
+
+.content ul li strong {
+    color: #4B0082;
+    font-weight: 600; /* Softer bold weight */
+}
+
+.content ul li p {
+    margin: 5px 0 0 0;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navlinks ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cont-box {
+        padding: 20px;
+        margin: 30px 10px;
+    }
+
+    .obj h1 {
+        font-size: 1.8rem;
+    }
+}
