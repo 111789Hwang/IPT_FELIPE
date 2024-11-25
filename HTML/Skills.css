@@ -1,0 +1,93 @@
+/* General Body Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #d4a1ff;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Bar */
+.navlinks {
+    background-color: #6f6569; /* Softer purple tone */
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navlinks ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between menu items */
+}
+
+.navlinks ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 8px 14px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.navlinks ul li a:hover {
+    background-color: #8d5880; /* Subtle hover effect */
+    color: #f0f0ff;
+    transform: translateY(-3px); /* Elegant hover lift */
+}
+
+/* Page Heading */
+h1 {
+    font-size: 2.2rem;
+    text-align: center;
+    color: #4B0082; /* Deep purple */
+    text-transform: capitalize; /* Modern style */
+    letter-spacing: 1.2px; /* Slightly reduced spacing for better readability */
+    margin: 40px 0 20px;
+}
+
+/* Content Container */
+.para {
+    max-width: 800px;
+    margin: 30px auto;
+    background: #fff; /* Clean white background */
+    border-radius: 20px; /* Slightly more rounded corners */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    padding: 30px;
+    border: none; /* Removed border for minimalism */
+}
+
+/* Paragraph Text */
+.para p {
+    font-size: 1rem;
+    color: #444; /* Slightly darker gray for better contrast */
+    margin: 10px 0; /* Consistent spacing */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem; /* Adjusted for smaller screens */
+    }
+
+    .para {
+        padding: 20px;
+        margin: 15px;
+    }
+
+    .navlinks ul {
+        flex-wrap: wrap; /* Allow items to wrap */
+        gap: 10px; /* Adjust spacing */
+    }
+
+    .navlinks ul li a {
+        font-size: 0.9rem; /* Slightly smaller text size for mobile */
+    }
+}
